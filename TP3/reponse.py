@@ -366,3 +366,5 @@ class Statistics:
         return variance(self.stats)
 
 
+def timeout_limit(timeout, raise_exception=False):
+    raise TimeoutError("Timeout limit reached")
