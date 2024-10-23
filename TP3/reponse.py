@@ -3,7 +3,7 @@
 # Chaque classe devra implémenter sa propre version de la méthode area().
 
 from abc import ABC, abstractmethod
-import statistics
+from statistics import mean, median, variance
 
 class Shape(ABC):
     def __init__(self, name):
@@ -357,10 +357,12 @@ class Statistics:
         self.stats = stats
 
     def mean(self):
-        return statistics.mean(self.stats)
+        return mean(self.stats)
 
     def median(self):
-        return statistics.median(self.stats)
+        return median(self.stats)
 
     def variance(self):
-        return statistics.variance(self.stats)
+        return variance(self.stats)
+
+
